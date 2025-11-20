@@ -1,4 +1,6 @@
-/*TIPOGRAFÍAS Y ESTILOS GENERALES*/
+/* ---------------------------------------------------
+   TIPOGRAFÍAS Y ESTILOS GENERALES
+--------------------------------------------------- */
 
 body {
     margin: 0;
@@ -14,14 +16,21 @@ h1, h2, h4 {
 }
 
 
-/*HEADER*/
+/* ---------------------------------------------------
+   HEADER
+--------------------------------------------------- */
 
 header {
     display: flex;
+    width: 90%;
     justify-content: space-between;
     align-items: center;
     padding: 20px 80px;
     background: linear-gradient(#000000c0, #00000000);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    transition: top 0.35s ease;
 }
 
 .logoHeader {
