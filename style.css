@@ -1,0 +1,245 @@
+/*TIPOGRAFÍAS Y ESTILOS GENERALES*/
+
+body {
+    margin: 0;
+    background: url(img/fondo2.jpg) center/cover fixed;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+
+/* Títulos elegantes */
+h1, h2, h4 {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+}
+
+
+/*HEADER*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background: linear-gradient(#000000c0, #00000000);
+}
+
+.logoHeader {
+    height: 80px;
+}
+
+.nav {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #c68642;
+}
+
+
+/* ---------------------------------------------------
+   HERO
+--------------------------------------------------- */
+.hero {
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h1 {
+    margin: 0;
+    font-size: 80px;
+    text-shadow: 0 0 10px #c68642;
+}
+
+.title h2 {
+    margin: 5px 0 0 0;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 300;
+    margin-top: -10px;
+}
+
+
+/* ---------------------------------------------------
+   SECCIONES GENERALES
+--------------------------------------------------- */
+.section {
+    padding: 60px 120px;
+}
+
+.sectionTitle {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sectionTitle h2 {
+    font-size: 40px;
+    border-bottom: 3px solid #c68642;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+
+/* ---------------------------------------------------
+   MENÚ
+--------------------------------------------------- */
+.menuContent {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.tarjetaMenu {
+    width: 280px;
+    background-color: #111;
+    border: 2px solid #c68642;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.tarjetaMenu img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.tarjetarjetaMenuta h4 {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.tarjetaMenu p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+.tarjetaMenu span {
+    font-size: 20px;
+    color: #c68642;
+    font-weight: bold;
+}
+
+
+/* ---------------------------------------------------
+   LOCALIZACIÓN
+--------------------------------------------------- */
+.locationContent {
+    display: flex;
+    justify-content: space-between;
+}
+
+.locationContent .image img {
+    width: 450px;
+    border-radius: 10px;
+}
+
+.inf {
+    font-size: 18px;
+}
+
+
+/* ---------------------------------------------------
+   FORMULARIO
+--------------------------------------------------- */
+.bookingContent {
+    display: flex;
+    justify-content: center;
+}
+
+.formContainer {
+    border: 3px solid #c68642;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    gap: 20px;
+    background-color: #000000a8;
+    border-radius: 10px;
+}
+
+.formGroup label {
+    margin-bottom: 5px;
+}
+
+input, select {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 100%;
+}
+
+.btn {
+    background-color: #c68642;
+    border: none;
+    padding: 12px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #a06a35;
+}
+
+
+/* ---------------------------------------------------
+   REVIEWS
+--------------------------------------------------- */
+.reviews {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.tarjetaReview {
+    width: 280px;
+    padding: 20px;
+}
+
+.tarjetaReview img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.flechasReview {
+    margin-top: 100px;
+    color: #c68642;
+    font-size: 50px;
+}
+
+.flechasReview:hover {
+    cursor: pointer;
+}
+
+/* ---------------------------------------------------
+   FOOTER
+--------------------------------------------------- */
+footer {
+    background-color: #c68642;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+
+footer img {
+    height: 150px;
+}
+
+footer p {
+    font-size: 16px;
+}
