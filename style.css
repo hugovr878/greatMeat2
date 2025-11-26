@@ -1,7 +1,4 @@
-/* ---------------------------------------------------
-   TIPOGRAFÍAS Y ESTILOS GENERALES
---------------------------------------------------- */
-
+/* ---------------------- GENERAL ---------------------- */
 body {
     margin: 0;
     background: url(img/fondo2.jpg) center/cover fixed;
@@ -9,28 +6,21 @@ body {
     color: white;
 }
 
-/* Títulos elegantes */
-h1,
-h2,
-h4 {
+h1, h2, h4 {
     font-family: 'Playfair Display', serif;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
-
-/* ---------------------------------------------------
-   HEADER
---------------------------------------------------- */
-
+/* ---------------------- HEADER ---------------------- */
 header {
     display: flex;
-    width: 90%;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 80px;
+    padding: 15px 40px;
     background: linear-gradient(#000000c0, #00000000);
     position: fixed;
     top: 0;
+    width: 90%;
     z-index: 1000;
     transition: top 0.35s ease;
 }
@@ -42,7 +32,8 @@ header {
 .nav {
     list-style: none;
     display: flex;
-    gap: 40px;
+    gap: 25px;
+    flex-wrap: wrap;
 }
 
 .nav a {
@@ -56,131 +47,106 @@ header {
     color: #c68642;
 }
 
-
-/* ---------------------------------------------------
-   HERO
---------------------------------------------------- */
+/* ---------------------- HERO ---------------------- */
 .hero {
-    height: 650px;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 0 20px;
 }
 
 .title h1 {
-    margin: 0;
-    font-size: 80px;
+    font-size: 60px;
     text-shadow: 0 0 10px #c68642;
 }
 
 .title h2 {
-    margin: 5px 0 0 0;
-    text-align: center;
-    font-size: 22px;
-    font-weight: 300;
-    margin-top: -10px;
+    font-size: 20px;
+    margin-top: -5px;
 }
 
-
-/* ---------------------------------------------------
-   SECCIONES GENERALES
---------------------------------------------------- */
+/* ---------------------- SECTIONS ---------------------- */
 .section {
-    padding: 60px 120px;
+    padding: 40px 60px;
 }
 
 .sectionTitle {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .sectionTitle h2 {
-    font-size: 40px;
+    font-size: 32px;
     border-bottom: 3px solid #c68642;
     display: inline-block;
     padding-bottom: 10px;
 }
 
-
-/* ---------------------------------------------------
-   MENÚ
---------------------------------------------------- */
+/* ---------------------- MENÚ ---------------------- */
 .menuContent {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 40px;
+    gap: 20px;
 }
 
 .tarjetaMenu {
     width: 280px;
+    max-width: 90%;
     background-color: #111;
     border: 2px solid #c68642;
     border-radius: 10px;
     padding: 20px;
     text-align: center;
+    transition: transform 0.3s;
 }
 
 .tarjetaMenu:hover {
-    transform: scale(1.1);   
-    z-index: 10;  
+    transform: scale(1.05);
 }
 
 .tarjetaMenu img {
     width: 100%;
     border-radius: 10px;
-    height: 220px;
+    height: auto;
 }
 
-.tarjetarjetaMenuta h4 {
-    font-size: 22px;
+.tarjetaMenu h4 {
+    font-size: 20px;
     margin-top: 10px;
 }
 
-.tarjetaMenu p {
-    font-size: 14px;
-    color: #ccc;
-}
-
-.tarjetaMenu span {
-    font-size: 20px;
-    color: #c68642;
-    font-weight: bold;
-}
-
-
-/* ---------------------------------------------------
-   LOCALIZACIÓN
---------------------------------------------------- */
+/* ---------------------- LOCALIZACIÓN ---------------------- */
 .locationContent {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
 }
 
 .locationContent .image img {
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     border-radius: 10px;
 }
 
-.inf {
-    font-size: 18px;
-}
-
-
-/* ---------------------------------------------------
-   FORMULARIO
---------------------------------------------------- */
+/* ---------------------- FORMULARIO ---------------------- */
 .bookingContent {
     display: flex;
     justify-content: center;
+    padding: 20px;
 }
 
 .formContainer {
     border: 3px solid #c68642;
-    padding: 40px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
-    width: 400px;
-    gap: 20px;
+    width: 100%;
+    max-width: 400px;
+    gap: 15px;
     background-color: #000000a8;
     border-radius: 10px;
 }
@@ -211,22 +177,18 @@ select {
     background-color: #a06a35;
 }
 
-
-/* ---------------------------------------------------
-   REVIEWS
---------------------------------------------------- */
+/* ---------------------- REVIEWS ---------------------- */
 .reviews {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    padding: 30px;
-    border-radius: 10px;
+    gap: 20px;
     text-align: center;
-    font-size: 18px;
 }
 
 .tarjetaReview {
     width: 280px;
-    padding: 20px;
+    max-width: 90%;
 }
 
 .tarjetaReview img {
@@ -244,93 +206,71 @@ select {
     cursor: pointer;
 }
 
-/* ---------------------------------------------------
-   FOOTER
---------------------------------------------------- */
+/* ---------------------- FOOTER ---------------------- */
 footer {
-    background-color: #c68642;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
-    padding: 40px 0;
+    padding: 20px 10px;
+    background-color: #c68642;
+    text-align: center;
 }
 
 footer img {
-    height: 150px;
+    height: 100px;
 }
 
-footer p {
-    font-size: 16px;
-}
-
-/* ---------------------------------------------------
-   RESPONSIVE
---------------------------------------------------- */
+/* ---------------------- MEDIA QUERIES ---------------------- */
 @media (max-width: 992px) {
-    .locationContent {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
+    .section {
+        padding: 30px 40px;
+    }
 
+    .hero {
+        height: 400px;
+    }
 
-        .image img {
-            flex: 100%;
-            width: 300px;
-            padding: 10px;
-        }
+    .title h1 {
+        font-size: 50px;
+    }
 
-        .inf {
-            flex: 100%;
-        }
+    .flechasReview {
+        display: none;
     }
 }
 
 @media (max-width: 600px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .title h1 {
+        font-size: 36px;
+    }
+
+    .title h2 {
+        font-size: 16px;
+    }
+
+    .section {
+        padding: 20px 15px;
+    }
+
+    .tarjetaMenu,
+    .tarjetaReview {
+        width: 90%;
+    }
 
     .locationContent {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-
-
-        .image img {
-            flex: 100%;
-            width: 200px;
-            padding: 10px;
-        }
-
-        .inf {
-            flex: 100%;
-        }
+        flex-direction: column;
+        align-items: center;
     }
 
     .reviews {
-        display: flex;
         flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        border-radius: 10px;
-        text-align: center;
-        font-size: 18px;
-
-        .tarjetaReview {
-            width: 200px;
-            height: auto;
-        }
-
-        .flechasReview {
-            display: none;
-        }
     }
-
-    footer {
-        padding: 0;
-        width: 100%;
-        background-color: #c68642;
-        display: flex;
-        justify-content: space-around;
-
-        img {
-            display: none;
-        }
+    
+    .flechasReview {
+        display: none;
     }
 }
