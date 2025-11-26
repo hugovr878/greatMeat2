@@ -241,7 +241,15 @@ footer img {
 
 @media (max-width: 600px) {
     header {
-        padding: 10px 20px;
+        padding: 5px;
+    }
+
+    .logoHeader {
+        height: 60px;
+    }
+
+    .nav a {
+        font-size: 15px;
     }
 
     .title h1 {
@@ -269,8 +277,16 @@ footer img {
     .reviews {
         flex-direction: column;
     }
-    
+
     .flechasReview {
         display: none;
     }
+
+    footer p {
+        font-size: 10px;
+    }
+
+    footer img {
+    height: 70px;
+}
 }
